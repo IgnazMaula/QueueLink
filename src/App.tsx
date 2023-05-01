@@ -190,35 +190,6 @@ function App() {
                     <h2 className='mb-4 text-xl font-bold text-gray-900 dark:text-white'>Add New Email</h2>
                     <form onSubmit={handleSubmit}>
                         <div className='grid gap-4 sm:grid-cols-2 sm:gap-6'>
-                            {/* Email */}
-                            <div className='w-full'>
-                                <label htmlFor='email' className='block mb-2 text-sm font-medium text-gray-900 dark:text-white'>
-                                    Email <span className='text-red-500'>*</span>
-                                </label>
-                                <input
-                                    type='email'
-                                    name='email'
-                                    id='email'
-                                    onChange={(e) => setEmail(e.target.value)}
-                                    className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'
-                                    placeholder='john.doe@email.com'
-                                    required
-                                />
-                            </div>
-                            {/* Ref Code */}
-                            <div className='w-full'>
-                                <label htmlFor='ref' className='block mb-2 text-sm font-medium text-gray-900 dark:text-white'>
-                                    Referral Code
-                                </label>
-                                <input
-                                    type='text'
-                                    name='ref'
-                                    id='ref'
-                                    onChange={(e) => setRefCode(e.target.value)}
-                                    className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'
-                                    placeholder='ABC123'
-                                />
-                            </div>
                             {/* First Name */}
                             <div className='w-full'>
                                 <label htmlFor='firstName' className='block mb-2 text-sm font-medium text-gray-900 dark:text-white'>
@@ -246,6 +217,35 @@ function App() {
                                     onChange={(e) => setLastName(e.target.value)}
                                     className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'
                                     placeholder='Doe'
+                                />
+                            </div>
+                            {/* Email */}
+                            <div className='w-full'>
+                                <label htmlFor='email' className='block mb-2 text-sm font-medium text-gray-900 dark:text-white'>
+                                    Email <span className='text-red-500'>*</span>
+                                </label>
+                                <input
+                                    type='email'
+                                    name='email'
+                                    id='email'
+                                    onChange={(e) => setEmail(e.target.value)}
+                                    className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'
+                                    placeholder='john.doe@email.com'
+                                    required
+                                />
+                            </div>
+                            {/* Ref Code */}
+                            <div className='w-full'>
+                                <label htmlFor='ref' className='block mb-2 text-sm font-medium text-gray-900 dark:text-white'>
+                                    Referral Code
+                                </label>
+                                <input
+                                    type='text'
+                                    name='ref'
+                                    id='ref'
+                                    onChange={(e) => setRefCode(e.target.value)}
+                                    className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'
+                                    placeholder='ABC123'
                                 />
                             </div>
                         </div>
